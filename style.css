@@ -1,0 +1,441 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+
+    min-height:100vh;
+
+    background:
+
+    radial-gradient(circle at 15% 20%, rgba(239,68,68,.12), transparent 25%),
+    radial-gradient(circle at 85% 15%, rgba(59,130,246,.12), transparent 25%),
+    radial-gradient(circle at 20% 85%, rgba(236,72,153,.10), transparent 20%),
+
+    linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef2ff
+    );
+
+    overflow-x:hidden;
+}
+
+.event-banner{
+
+    background:
+    linear-gradient(
+        90deg,
+        #dc2626,
+        #ef4444
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:14px;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+/* Background Shapes */
+
+.bg-shape{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    z-index:-1;
+}
+
+.shape1{
+
+    width:300px;
+    height:300px;
+
+    background:#fecaca;
+
+    top:120px;
+    left:-120px;
+}
+
+.shape2{
+
+    width:350px;
+    height:350px;
+
+    background:#bfdbfe;
+
+    top:200px;
+    right:-150px;
+}
+
+.shape3{
+
+    width:250px;
+    height:250px;
+
+    background:#fbcfe8;
+
+    bottom:80px;
+    left:20%;
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    padding:30px;
+}
+
+.logo-row{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.logo-sankalp{
+
+    width:220px;
+
+    filter:
+    drop-shadow(
+        0 15px 30px rgba(0,0,0,.15)
+    );
+}
+
+.logo-manipal{
+
+    width:260px;
+
+    filter:
+    drop-shadow(
+        0 15px 30px rgba(0,0,0,.12)
+    );
+}
+
+.partner-x{
+
+    font-size:50px;
+
+    font-weight:bold;
+
+    color:#dc2626;
+}
+
+.title{
+
+    margin-top:25px;
+
+    font-size:52px;
+
+    color:#0b4ea2;
+
+    font-weight:800;
+}
+
+.subtitle{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:22px;
+}
+
+/* Card */
+
+.card{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:20px auto 50px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.75);
+
+    backdrop-filter:
+    blur(20px);
+
+    border:
+    1px solid rgba(255,255,255,.4);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.08);
+}
+
+/* Stats */
+
+.stats{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+}
+
+.stat-box{
+
+    background:white;
+
+    padding:25px;
+
+    min-width:180px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+}
+
+.stat-value{
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    color:#0b4ea2;
+}
+
+.stat-label{
+
+    margin-top:5px;
+
+    color:#666;
+}
+
+/* Upload */
+
+.upload-zone{
+
+    max-width:700px;
+
+    margin:30px auto;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    border:2px dashed #2563eb;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.95),
+        rgba(239,246,255,.95)
+    );
+
+    text-align:center;
+}
+
+.upload-icon{
+    font-size:60px;
+}
+
+.upload-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+}
+
+#fileName{
+
+    margin-top:15px;
+
+    color:#666;
+}
+
+/* Trophy */
+
+.trophy{
+
+    text-align:center;
+
+    font-size:140px;
+
+    margin:20px 0;
+
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+/* Button */
+
+.draw-btn{
+
+    display:block;
+
+    margin:auto;
+
+    border:none;
+
+    padding:18px 50px;
+
+    border-radius:18px;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0b4ea2,
+        #1976d2
+    );
+}
+
+/* Spinner */
+
+.spinner{
+
+    min-height:70px;
+
+    margin-top:30px;
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#0b4ea2;
+}
+
+/* Winners */
+
+.winner-card{
+
+    max-width:550px;
+
+    margin:20px auto;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffffff,
+        #f8fafc
+    );
+
+    border:
+    2px solid #3b82f6;
+
+    box-shadow:
+    0 15px 30px rgba(59,130,246,.12);
+
+    text-align:center;
+}
+
+.winner-title{
+
+    font-size:24px;
+
+    color:#0b4ea2;
+
+    font-weight:700;
+}
+
+.winner-name{
+
+    margin-top:10px;
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:#065f46;
+}
+
+.footer{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    color:#666;
+}
+
+@media(max-width:768px){
+
+    .title{
+        font-size:34px;
+    }
+
+    .logo-sankalp{
+        width:180px;
+    }
+
+    .logo-manipal{
+        width:220px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .draw-btn{
+        width:100%;
+    }
+}
